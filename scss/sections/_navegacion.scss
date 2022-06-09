@@ -1,12 +1,12 @@
 .barra{
    display: flex;
    flex-direction: column;
-
    padding-top: 3.5rem;
+   align-items: center;
   
    
   img{
-   width: 30rem;
+      width: 30rem;
       margin-left: 5rem;
       
   }
@@ -38,4 +38,12 @@
          }
       }
   }
+}
+.navbar-collapse{
+   background-color: white;
+  font-size: 6rem;
+}
+.navbar-toggler-icon{
+   width: 2.5rem;
+   height: 2.5rem;
 }

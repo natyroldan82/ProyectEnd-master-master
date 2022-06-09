@@ -1,15 +1,4 @@
  
- /*.no-webp{
-    background-image: url(/assets/img/header.jpg);
-
- }
- .webp.inicio{
-     background-image: url(/assets/img/header.webp);
- }
- .header{
-     background-color: $gris-oscuro;
-     padding: 1rem 0 3rem 0;
- }*/
  .inicio {
     background-image: url(../assets/img/header.jpg);
     padding: 1rem 0 5rem 0;
@@ -18,7 +7,7 @@
     min-height: 50rem;
     display: flex;
     @include tablet{
-        min-height: 70rem;
+       /* min-height: 70rem;*/
     }
     
     &.header{
@@ -26,9 +15,6 @@
     padding: 1rem 0 3rem 0 ;
     font-family: $font;
     font-weight: $bold;
-    
-    
-    
     }
   }
 
@@ -38,9 +24,8 @@
     flex-direction: column;
     justify-content:space-between ;
     @include tablet{
-        min-height: 70rem;
+       /* min-height: 70rem;*/
     }
-    
     
     h1 {
         text-align: left;
@@ -50,15 +35,7 @@
 
     }
 }
-.navbar-nav{
-  
-        font-size: 3rem;
-    }
 
-    .navbar-toggler{
-    
-        background-color: $gris-oscuro;
-        color: $blanco;
-      
-     }
+.navbar-toggler{
+     background-color: $blanco;}
  
