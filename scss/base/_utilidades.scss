@@ -1,0 +1,15 @@
+
+.contenido-centrado {
+    max-width: 80rem;
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+.bg-secondary{
+    background-color: $gris-oscuro;
+}
+.alinear {
+    text-align: center;
+}

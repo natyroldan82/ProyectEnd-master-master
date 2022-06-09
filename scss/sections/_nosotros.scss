@@ -1,0 +1,44 @@
+
+.header{
+    background-color: $gris-oscuro;
+  
+  
+       height:20rem ;
+  
+      
+   }
+   
+    
+    
+
+  
+.contenedor  {
+    h1{
+        color:$verde;
+        font-weight: $bold;
+        font-family: $font;
+        margin: 5rem 0;
+    }
+    p{
+        text-align: justify;
+        padding: 3rem;
+    }
+}
+.col-md-4{
+    img{
+        width: 50%;
+        
+        
+    }
+}
+.card{
+    text-align: center;
+    margin: 2rem;
+    font-family: $font;
+    h5{ color: $verde;
+        font-size: 2.5rem;
+    }
+}
+
+
+
