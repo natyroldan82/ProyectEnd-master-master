@@ -466,7 +466,7 @@ template {
 .barra {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  padding-top: 3.5rem;
 }
 .barra img {
   width: 30rem;
@@ -499,10 +499,6 @@ template {
   .navbar-nav a:last-of-type {
     margin-right: 0;
   }
-}
-
-.li nav-item.dropdown {
-  background-color: aqua;
 }
 
 @media (min-width: 768px) {
@@ -627,7 +623,7 @@ h2 {
 
 .header {
   background-color: #444444;
-  height: 20rem;
+  height: 30rem;
 }
 
 .contenedor h1 {
