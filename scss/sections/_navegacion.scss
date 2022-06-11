@@ -13,20 +13,23 @@
    @include tablet{
       flex-direction: row;
       justify-content: space-between;
+      
    }
+   
 }
 
 .navbar-nav{
-
+   
    @include tablet{
       display: flex;
       align-items: center;
-     
+      
+      
    }
-
-   a{
    
-      color: $blanco;
+   a{
+     
+     color: $blanco;
       text-decoration: none;
       font-size: 2.2rem;
       display: block;
@@ -40,13 +43,18 @@
       }
   }
 }
-.navbar-toggler{
-   width: 2.5rem;
-   height: 2.5rem;
-   background-color: $blanco;
+
+.navbar{
+   margin: 0;
+   background-color:transparent !important;
 }
 
-.navbar-collapse{
-   background-color:none;
-  
+
+.navbar-light .navbar-toggler{
+ background-color: white;
+ .navbarNavDropdown{
+    background-color: $blanco;
+ }
 }
+
+  
