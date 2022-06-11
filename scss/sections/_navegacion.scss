@@ -3,7 +3,7 @@
    flex-direction: column;
    padding-top: 3.5rem;
    align-items: center;
-  
+   height: 20rem;
    
   img{
       width: 30rem;
@@ -17,10 +17,11 @@
 }
 
 .navbar-nav{
+
    @include tablet{
       display: flex;
       align-items: center;
-      
+     
    }
 
    a{
@@ -39,11 +40,13 @@
       }
   }
 }
-.navbar-collapse{
-   background-color: white;
-  font-size: 6rem;
-}
-.navbar-toggler-icon{
+.navbar-toggler{
    width: 2.5rem;
    height: 2.5rem;
+   background-color: $blanco;
+}
+
+.navbar-collapse{
+   background-color:none;
+  
 }

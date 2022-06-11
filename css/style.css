@@ -406,24 +406,46 @@ template {
 }
 
 /*ui*/
-.inicio {
-  background-image: url(../assets/img/header.jpg);
-  padding: 1rem 0 5rem 0;
-  background-size: cover;
-  background-position: center center;
-  min-height: 50rem;
-  display: flex;
-}
-@media (min-width: 768px) {
-  .inicio {
-    /* min-height: 70rem;*/
+/*
+ .inicio {
+    background-image: url(../assets/img/header.jpg);
+    padding: 1rem 0 5rem 0;
+    background-size: cover;
+    background-position: center center;
+    min-height: 50rem;
+    display:flex;
+    @include tablet{
+        min-height: 70rem;
+    }
+
+    &.header{
+     background-color: $gris-oscuro;
+    padding: 1rem 0 3rem 0 ;
+    font-family: $font;
+    font-weight: $bold;
+    }
   }
-}
-.inicio.header {
+*/
+.header {
   background-color: #444444;
   padding: 1rem 0 3rem 0;
   font-family: "Krub", sans-serif;
   font-weight: 600;
+}
+.header.inicio {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../assets/img/header.jpg);
+}
+@media (min-width: 768px) {
+  .header.inicio {
+    min-height: 70rem;
+  }
+}
+@media (min-width: 768px) {
+  .header.inicio .contenido-header {
+    min-height: 70rem;
+  }
 }
 
 .contenido-header {
@@ -433,7 +455,7 @@ template {
 }
 @media (min-width: 768px) {
   .contenido-header {
-    /* min-height: 70rem;*/
+    /*min-height: 70rem;*/
   }
 }
 .contenido-header h1 {
@@ -443,15 +465,12 @@ template {
   max-width: 55rem;
 }
 
-.navbar-toggler {
-  background-color: #EDEDED;
-}
-
 .barra {
   display: flex;
   flex-direction: column;
   padding-top: 3.5rem;
   align-items: center;
+  height: 20rem;
 }
 .barra img {
   width: 30rem;
@@ -486,14 +505,14 @@ template {
   }
 }
 
-.navbar-collapse {
-  background-color: white;
-  font-size: 6rem;
-}
-
-.navbar-toggler-icon {
+.navbar-toggler {
   width: 2.5rem;
   height: 2.5rem;
+  background-color: #EDEDED;
+}
+
+.navbar-collapse {
+  background-color: none;
 }
 
 @media (min-width: 768px) {
